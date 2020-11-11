@@ -217,9 +217,18 @@
         </div>
 
       </div>
+      <script>
 
+
+        function jump(){
+          if (confirm("確認に進みますか？")==true)
+            //OKなら確認にジャンプさせる
+            location.href = パスワード設定.html
+        }
+        
+        </script>
       <div class="text-center my-5">
-        <button type="submit" class="btn btn-primary">確認する </button>
+        <input type="button" name="link" value="確認へ" onclick="jump()">
       </div>
 
     </form>
