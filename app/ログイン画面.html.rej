@@ -1,0 +1,15 @@
+diff a/app/ログイン画面.html b/app/ログイン画面.html	(rejected hunks)
+@@ -0,0 +1,12 @@
++<!DOCTYPE html>
++<html>
++<head>
++	<meta charset="utf-8">
++	<meta http-equiv="X-UA-Compatible" content="IE=edge">
++	<title>病児保育マッチング</title>
++</head>
++<body>
++<h1>病児保育マッチング</h1><!-- 見出し -->
++<p>このサイトは病児保育に特化したマッチングサイトです。</p>
++</body>
++</html>
+\ No newline at end of file
