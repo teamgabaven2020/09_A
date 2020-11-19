@@ -1,0 +1,30 @@
+
+
+
+</div>
+<div>
+  
+</div>
+<div>
+  <div>
+    <div>
+      <div>
+        <div>
+</div>
+<div>
+  <label for="i_pass">パスワード</label>
+  <input id="i_pass" type="password" name="pass" value="" inputmode="latin">
+</div>
+<div>
+  <script>
+
+
+    function jump(){
+      if (confirm("確認に進みますか？")==true)
+        //OKなら確認にジャンプさせる
+        location.href = パスワード確認.html
+    }
+    
+    </script>
+    
+    <input type="button" name="link" value="確認へ" onclick="jump()">

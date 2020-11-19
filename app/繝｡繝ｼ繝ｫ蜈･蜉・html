@@ -1,0 +1,8 @@
+<div class="form-row">
+  <label class="col-sm-3 col-form-label">メールアドレス <span class="badge badge-danger">必須</span></label>
+  <div class="col-sm-9">
+    <p>
+      <input type="email" name="email" autocomplete="email" class="form-control" placeholder="メールアドレス" required />
+    </p>
+  </div>
+</div>
