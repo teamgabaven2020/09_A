@@ -1,0 +1,12 @@
+<div align="center">
+<h1>ワンタイムパスワードを入力</h1>
+
+<div class="form-row">
+  <label class="col-sm-3 col-form-label">ワンタイムパスワード <span class="badge badge-danger">必須</span></label>
+  <div class="col-sm-9">
+    <p>
+      <input type="email" name="email" autocomplete="email" class="form-control" placeholder="ワンタイムパスワード" required />
+    </p>
+    <a href="新しいパスワード.html">確認</a>
+  </div>
+</div>

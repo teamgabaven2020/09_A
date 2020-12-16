@@ -1,0 +1,21 @@
+<head>
+  <link rel=”stylesheet”href=”確認完了.css”>
+</head>
+
+
+<body>
+<h1 style="text-align:center">変更がなければ下をクリック</h1>
+<div align="center">
+<p>
+  <a href="保育TOP.html">保育TOPへ</a></div>
+  
+</p>
+
+</body>
+<div align="center">
+<h2>パスワード変更の場合</h2>
+<a href="パスワード設定.html">こちらへ</a></div>
+<div align="center">
+<h2>個人情報入力変更の場合</h2>
+<a href="個人情報入力.html">こちらへ</a></div>
+

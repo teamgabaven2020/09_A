@@ -1,0 +1,19 @@
+<div align="center">
+<h1>パスワード設定</h1>
+
+
+
+  <label for="i_pass">パスワード</label>
+  <input id="i_pass" type="password" name="pass" value="" inputmode="latin">
+
+
+  
+
+
+
+      <a href="パスワード確認.html">確認へ</a>
+    </div>
+    
+    
+    
+   
