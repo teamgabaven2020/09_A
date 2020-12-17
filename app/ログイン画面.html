@@ -1,101 +1,114 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<style>
-.login-container{
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-.login-form-1{
-    padding: 5%;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
-}
-.login-form-1 h3{
+<!DOCTYPE html>
+<html>
+<head></head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>病児保育マッチング　</title>
+    <style>
+h1 {
+    font-weight: normal;
+    padding-bottom: 10px;
     text-align: center;
-    color: #333;
+    position: relative;
+    margin: 0 0 30px 0;
+    letter-spacing: 5px;
 }
-.login-form-2{
-    padding: 5%;
-    background: #0062cc;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
-}
-.login-form-2 h3{
+ 
+p {
+    width: 80%;
+    line-height: 1;
+    display: inline-block;
+    background-color: #03A9F4;
+    padding: 20px;
+    position: relative;
+    z-index: 999;
+    margin: 0px 0 0;
+    color: #fff;
+    letter-spacing: 2px;
     text-align: center;
+}
+ 
+a {
     color: #fff;
+    text-decoration: none;
+    background-color: #F44336;
+    display: block;
+    padding: 15px 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 0 0 #9e2b23;
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+    margin: 10px auto 0;
+    letter-spacing: 2px;
 }
-.login-container form{
-    padding: 10%;
+ 
+h1::after {
+    content: "";
+    display: block;
+    border-bottom: solid 5px #2196F3;
+    position: absolute;
+    width: 100px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    bottom: -5px;
 }
-.btnSubmit
-{
-    width: 50%;
-    border-radius: 1rem;
-    padding: 1.5%;
-    border: none;
-    cursor: pointer;
+ 
+html {
+    background-color: #a8e4ff;
 }
-.login-form-1 .btnSubmit{
-    font-weight: 600;
-    color: #fff;
-    background-color: #0062cc;
-}
-.login-form-2 .btnSubmit{
-    font-weight: 600;
-    color: #0062cc;
+ 
+body {
     background-color: #fff;
+    padding: 30px 30px 30px;
+    max-width: 700px;
+    margin: 20px auto;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.18);
+    border-radius: 3px;
+    position: relative;
 }
-.login-form-2 .ForgetPwd{
-    color: #fff;
-    font-weight: 600;
-    text-decoration: none;
-}
-.login-form-1 .ForgetPwd{
-    color: #0062cc;
-    font-weight: 600;
-    text-decoration: none;
+ 
+img {
+    height: 300px;
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    right: 30px;
 }
 </style>
+</head>
+<body>
+    <h1>病児保育マッチング ログイン　</h1>
+</html>
 
-<!------ Include the above in your HEAD tag ---------->
+<p>保育者はこちらからログイン↓↓</p>
+<?php
+if($error_message) {
+	echo $error_message;
+}
+?>
 
-<div class="container login-container">
-            <div class="row">
-                <div class="col-md-6 login-form-1">
-                    <h3>保育者はこちらから</h3>
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Email *" value="" />
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Your Password *" value="" />
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" class="btnSubmit" value="Login" />
-                        </div>
-                        
-                        <div class="form-group">
-                            <a href="#" class="ForgetPwd">パスワードを忘れた方はこちら</a>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-md-6 login-form-2">
-                    <h3>保育を依頼したい方はこちらから</h3>
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Email *" value="" />
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Your Password *" value="" />
-                        </div>
-                       
-                        
-                        <button onclick="location.href='https:file:///C:/Users/umikainonoka/Videos/Documents/09_A/app/%E4%BF%9D%E8%82%B2%E4%BE%9D%E9%A0%BC%E7%94%BB%E9%9D%A2.html">保育を依頼したい方はこちらから</button>
-                        <div class="form-group">
+<form action="index.php" method="POST">
+	<p>ログインID：<input type="text" name="user_name"></p>
+	<p>パスワード：<input type="password" name="password"></p>
+	<a href="#" class="btn btn-primary btn-info"><span class="glyphicon glyphicon-pushpin"></span>保育者ログイン</a>
+</form>
 
-                            <a href="#" class="ForgetPwd" value="Login">パスワードを忘れた方はこちら</a>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        
+<p>保育を依頼したい方はこちらからログイン↓↓</p>
+
+<?php
+if($error_message) {
+	echo $error_message;
+}
+?>
+
+<form action="index.php" method="POST">
+	<p>ログインID：<input type="text" name="user_name"></p>
+	<p>パスワード：<input type="password" name="password"></p>
+	<a href="file:///C:/Users/umikainonoka/Videos/Documents/09_A/app/%E4%BF%9D%E8%82%B2%E4%BE%9D%E9%A0%BC%E7%94%BB%E9%9D%A2.html" class="btn btn-primary btn-info"><span class="glyphicon glyphicon-pushpin"></span>保育依頼者ログイン</a>
+</form>
+
+<a href="file:///C:/Users/umikainonoka/Videos/Documents/09_A/app/%E3%83%A1%E3%83%BC%E3%83%AB%E5%85%A5%E5%8A%9B.html">ID・パスワードを忘れた方はこちら</a>
+
+</html>

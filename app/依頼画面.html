@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script>
+    window.addEventListener("beforeunload", function (event) {
+      var confirmationMessage = "入力内容を破棄します。";
+
+      event.returnValue = confirmationMessage;
+      return confirmationMessage;
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <h1>保育依頼</h1>
+    </div>
+
+    <form>
+
+      <div class="form-row">
+        <label class="col-sm-3 col-form-label">お名前 <span class="badge badge-danger">必須</span></label>
+        <div class="col-sm-9">
+          <p>
+            <input type="text" name="name" autocomplete="name" class="form-control" placeholder="お名前" required />
+          </p>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label class="col-sm-3 col-form-label">電話番号 <span class="badge badge-danger">必須</span></label>
+        <div class="col-sm-9">
+          <p>
+            <input type="tel" name="tel" autocomplete="tel" class="form-control" placeholder="電話番号" required />
+          </p>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label class="col-sm-3 col-form-label">郵便番号 <span class="badge badge-danger">必須</span></label>
+        <div class="col-sm-9">
+          <p>
+            <input type="text" name="postal-code" autocomplete="postal-code" class="form-control" placeholder="郵便番号"
+              required />
+          </p>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label class="col-sm-3 col-form-label">ご自宅住所 <span class="badge badge-danger">必須</span></label>
+        <div class="col-sm-9">
+          <p>
+            <input type="text" name="address-level1" autocomplete="address-level1" class="form-control"
+              placeholder="都道府県" required />
+          </p>
+          <p>
+            <input type="text" name="address-level2" autocomplete="address-level2" class="form-control"
+              placeholder="市区町村" required />
+          </p>
+          <p>
+            <input type="text" name="address-line1" autocomplete="address-line1" class="form-control" placeholder="番地等"
+              required />
+          </p>
+          <p>
+            <input type="text" name="address-line2" autocomplete="address-line2" class="form-control"
+              placeholder="アパート／マンション名等" />
+          </p>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label class="col-sm-3 col-form-label">メールアドレス <span class="badge badge-danger">必須</span></label>
+        <div class="col-sm-9">
+          <p>
+            <input type="email" name="email" autocomplete="email" class="form-control" placeholder="メールアドレス" required />
+          </p>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label class="col-sm-3 col-form-label">時間</label>
+        <div class="col-sm-9">
+          <p>
+            <input type="text" name="organization" autocomplete="organization" autocorrect="off" autocapitalize="off"
+              class="form-control" placeholder="〇時～〇時" />
+          </p>
+        </div>
+      </div>
+
+      
+        </div>
+
+        <a href="file:///C:/Users/umikainonoka/Videos/Documents/09_A/app/%E4%BF%9D%E8%82%B2%E4%BE%9D%E9%A0%BC%E7%94%BB%E9%9D%A2.html#" class="btn btn-primary btn-info"><span class="glyphicon glyphicon-pushpin"></span>戻る</a>
+        <a href="file:///C:/Users/umikainonoka/Videos/Documents/09_A/app/%E4%BF%9D%E8%82%B2%E4%BE%9D%E9%A0%BC%E8%80%85%E4%BF%AE%E6%AD%A3%E5%AE%8C%E4%BA%86.html#" class="btn btn-primary btn-info"><span class="glyphicon glyphicon-pushpin"></span>確定</a>
+    </form>
+  </div>
+</body>
+</html>
